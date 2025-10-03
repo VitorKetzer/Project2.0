@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro - Daki Sites</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <form id="registerForm" autocomplete="on" novalidate>
+      <h1>Cadastro</h1>
+
+      <div class="input-box">
+        <input id="registerName" name="name" placeholder="Nome completo" type="text" required>
+        <i class="bx bxs-id-card"></i>
+      </div>
+
+      <div class="input-box">
+        <input id="registerEmail" name="email" placeholder="Email" type="email" required>
+        <i class="bx bxs-envelope"></i>
+      </div>
+
+      <div class="input-box">
+        <input id="registerPassword" name="password" placeholder="Senha (min 6 caracteres)" type="password" required>
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+
+      <div class="input-box">
+        <input id="registerPasswordConfirm" placeholder="Confirme a senha" type="password" required>
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+
+      <button type="submit" class="register">Cadastrar</button>
+      <div id="registerError" class="error" role="alert" aria-live="polite"></div>
+
+      <div class="register-link">
+        <p>Já tem conta? <a href="pag_login.html">Entrar</a></p>
+      </div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
