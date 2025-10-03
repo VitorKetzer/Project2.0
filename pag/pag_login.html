@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project2.0</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <form id="loginForm" autocomplete="on" novalidate>
+      <h1>Login</h1>
+
+      <div class="input-box">
+        <input id="loginEmail" name="email" placeholder="Usuário (email)" type="email" required>
+        <i class="bx bxs-user"></i>
+      </div>
+
+      <div class="input-box">
+        <input id="loginPassword" name="password" placeholder="Senha" type="password" required>
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+
+      <div class="remember-forgot">
+        <label><input type="checkbox" id="remember"> Lembrar senha</label>
+        <a href="#"> Esqueci senha</a>
+      </div>
+
+      <button type="submit" class="login">Login</button>
+      <div id="loginError" class="error" role="alert" aria-live="polite"></div>
+
+      <div class="register-link">
+        <p>Não tem uma conta? <a href="register.html">Cadastra-se</a></p>
+      </div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
